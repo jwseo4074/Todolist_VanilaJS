@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width-device-width", initial-scale="1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>zwon's Todo List</title>
+    </head>
+</html>
+
+<body>
+    <div id="main_form">
+        <div id ="content_big_box">
+            <div id="main_form_up_box">
+                <h2 id ="clock"></h2>
+                <h1 id="greeting" class="hidden"></h1>
+                <!-- 처음애는 로그인 폼이랑 greeting은 hidden 상태  = 안보여-->
+                <form id="login_form" class="hidden">
+                    <input id="input_text" required maxlength = "15" type="text" placeholder="What is  name?" />
+                    <button id="input_btn">Log in</button>
+                </form>
+            </div>
+
+            <div id="main_form_bottom_box">
+                <div id="bottom_box_left_box">
+                    <form id="todo_form">
+                        <input id="todo_form_input" type="text" placeholder="Write a Todo here" />
+                    </form>
+                    <div id="weather">
+                        <div id="city_box"></div>
+                        <div id="temp_box"></div>
+                        <div id="weather_box"></div>
+                    </div>
+                </div>
+                <div id="bottom_box_right_box">
+                    <div class="todo_box" id="todo_box1">
+                        <ul class="todo_list" id="todo_list1">
+                        </ul>
+                    </div>
+                    <div class="todo_box" id="todo_box2">
+                        <ul class="todo_list" id="todo_list2">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="quote">
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+            
+            
+        <script src="greetings.js"></script>
+        <script src="clock.js"></script>
+        <script src="quotes.js"></script>
+        <script src="background.js"></script>
+        <script src="todo.js"></script>
+        <script src="weather.js"></script>
+        
+    </div>
+</body>
